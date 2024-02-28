@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnShowLeaderboard"
+        style="@android:style/Widget.Material.Light.Button.Inset"
+        android:layout_width="326dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="18dp"
+        android:fontFamily="@font/black_ops_one"
+        android:onClick="onShowLeaderboardClick"
+        android:text="@string/show_leaderboard"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnHold"
+        style="@android:style/Widget.Material.Light.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/black_ops_one"
+        android:onClick="onHoldButtonClick"
+        android:text="@string/hold"
+        android:textAlignment="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnRoll"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtComputerGames"
+        android:layout_width="59dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/black_ops_one"
+        android:text="@string/computer_games_value"
+        android:textAlignment="center"
+        android:textColor="#494747"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtComputerHeader"
+        app:layout_constraintStart_toStartOf="@+id/txtComputerHeader"
+        app:layout_constraintTop_toBottomOf="@+id/txtComputerHeader" />
+
+    <TextView
+        android:id="@+id/txtComputerTotal"
+        android:layout_width="59dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/black_ops_one"
+        android:text="@string/computer_total_score_value"
+        android:textAlignment="center"
+        android:textColor="#494747"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtComputerGames"
+        app:layout_constraintStart_toStartOf="@+id/txtComputerGames"
+        app:layout_constraintTop_toBottomOf="@+id/txtComputerGames" />
+
+    <TextView
+        android:id="@+id/txtComputerTurnTotal"
+        android:layout_width="59dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/black_ops_one"
+        android:text="@string/computer_turn_total_value"
+        android:textAlignment="center"
+        android:textColor="#494747"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtComputerTotal"
+        app:layout_constraintStart_toStartOf="@+id/txtComputerTotal"
+        app:layout_constraintTop_toBottomOf="@+id/txtComputerTotal" />
+
+    <TextView
+        android:id="@+id/pigTitle"
+        android:layout_width="192dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/bowlby_one"
+        android:text="@string/pig"
+        android:textAlignment="center"
+        android:textColor="#7E7C7C"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPlayerHeader"
+        android:layout_width="120dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="25dp"
+        android:fontFamily="@font/black_ops_one"
+        android:text="@string/you"
+        android:textAlignment="center"
+        android:textColor="#494747"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtComputerHeader"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtComputerHeader"
+        android:layout_width="122dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/black_ops_one"
+        android:text="@string/computer"
+        android:textAlignment="center"
+        android:textColor="#494747"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPlayerGames"
+        android:layout_width="59dp"
+        android:layout_height="25dp"
+        android:fontFamily="@font/black_ops_one"
+        android:text="@string/player_games_value"
+        android:textAlignment="center"
+        android:textColor="#494747"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtComputerGames"
+        app:layout_constraintEnd_toEndOf="@+id/txtPlayerHeader"
+        app:layout_constraintStart_toStartOf="@+id/txtPlayerHeader" />
+
+    <TextView
+        android:id="@+id/txtPlayerTotalScore"
+        android:layout_width="59dp"
+        android:layout_height="25dp"
+        android:fontFamily="@font/black_ops_one"
+        android:text="@string/player_total_score_value"
+        android:textAlignment="center"
+        android:textColor="#494747"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtComputerTotal"
+        app:layout_constraintEnd_toEndOf="@+id/txtPlayerGames"
+        app:layout_constraintStart_toStartOf="@+id/txtPlayerGames" />
+
+    <TextView
+        android:id="@+id/txtPlayerTurnTotal"
+        android:layout_width="59dp"
+        android:layout_height="25dp"
+        android:fontFamily="@font/black_ops_one"
+        android:text="@string/player_turn_total_value"
+        android:textAlignment="center"
+        android:textColor="#494747"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtComputerTurnTotal"
+        app:layout_constraintEnd_toEndOf="@+id/txtPlayerTotalScore"
+        app:layout_constraintStart_toStartOf="@+id/txtPlayerTotalScore" />
+
+    <TextView
+        android:id="@+id/txtGamesWon"
+        android:layout_width="163dp"
+        android:layout_height="31dp"
+        android:fontFamily="monospace"
+        android:text="@string/games_won"
+        android:textAlignment="center"
+        android:textColor="#494747"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtComputerGames"
+        app:layout_constraintEnd_toEndOf="@+id/pigTitle"
+        app:layout_constraintStart_toStartOf="@+id/pigTitle" />
+
+    <TextView
+        android:id="@+id/txtTotalScore"
+        android:layout_width="154dp"
+        android:layout_height="26dp"
+        android:fontFamily="monospace"
+        android:text="@string/total_score"
+        android:textAlignment="center"
+        android:textColor="#494747"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtComputerTotal"
+        app:layout_constraintEnd_toEndOf="@+id/txtGamesWon"
+        app:layout_constraintStart_toStartOf="@+id/txtGamesWon" />
+
+    <TextView
+        android:id="@+id/txtTurnTotal"
+        android:layout_width="161dp"
+        android:layout_height="32dp"
+        android:fontFamily="monospace"
+        android:text="@string/turn_total"
+        android:textAlignment="center"
+        android:textColor="#494747"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtComputerTurnTotal"
+        app:layout_constraintEnd_toEndOf="@+id/txtTotalScore"
+        app:layout_constraintStart_toStartOf="@+id/txtTotalScore" />
+
+    <TextView
+        android:id="@+id/txtCurrentRoll"
+        android:layout_width="59dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="280dp"
+        android:fontFamily="@font/black_ops_one"
+        android:text="@string/current_roll_value"
+        android:textAlignment="center"
+        android:textColor="#494747"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtTurnTotal"
+        app:layout_constraintStart_toStartOf="@+id/txtTurnTotal"
+        app:layout_constraintTop_toBottomOf="@+id/txtTurnTotal" />
+
+    <TextView
+        android:id="@+id/txtDiceTotalFooter"
+        android:layout_width="242dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="@string/dice_total"
+        android:textAlignment="center"
+        android:textColor="#494747"
+        app:layout_constraintEnd_toEndOf="@+id/txtCurrentRoll"
+        app:layout_constraintStart_toStartOf="@+id/txtCurrentRoll"
+        app:layout_constraintTop_toBottomOf="@+id/txtCurrentRoll" />
+
+    <Button
+        android:id="@+id/btnRoll"
+        style="@android:style/Widget.Material.Light.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/black_ops_one"
+        android:onClick="onRollButtonClick"
+        android:text="@string/roll"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDiceTotalFooter" />
+
+    <ImageView
+        android:id="@+id/imgLeftDice"
+        android:layout_width="152dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/left_dice_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPlayerTurnTotal"
+        app:srcCompat="@drawable/dice_1" />
+
+    <ImageView
+        android:id="@+id/imgRightDice"
+        android:layout_width="152dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:contentDescription="@string/right_dice_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtComputerTurnTotal"
+        app:srcCompat="@drawable/dice_1" />
+
+    <ImageView
+        android:id="@+id/imgLoser"
+        android:layout_width="253dp"
+        android:layout_height="248dp"
+        android:contentDescription="@string/loser_image"
+        android:onClick="onLoserClick"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pigTitle"
+        app:layout_constraintVertical_bias="0.37"
+        app:srcCompat="@drawable/loser_vec" />
+
+    <ImageView
+        android:id="@+id/imgTrophy"
+        android:layout_width="269dp"
+        android:layout_height="303dp"
+        android:contentDescription="@string/trophy_image"
+        android:onClick="onTrophyClick"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pigTitle"
+        app:srcCompat="@drawable/new_trophy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

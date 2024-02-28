@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Leaderboard">
+
+    <TextView
+        android:id="@+id/leaderboardTitle"
+        android:layout_width="348dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/bowlby_one"
+        android:text="@string/pig_leaderboard"
+        android:textAlignment="center"
+        android:textColor="#7E7C7C"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPlayGame"
+        style="@android:style/Widget.Material.Light.Button.Inset"
+        android:layout_width="207dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/black_ops_one"
+        android:onClick="onPlayGameClick"
+        android:text="@string/play_game"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/leaderboardRecycler"
+        android:layout_width="399dp"
+        android:layout_height="191dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaderboardTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

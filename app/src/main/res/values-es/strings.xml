@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Juego de rodar dados de cerdo</string>
+    <string name="you">TÚ</string>
+    <string name="pig">CERDO</string>
+    <string name="computer">COMPUTADORA</string>
+    <string name="games_won">Juegos ganados</string>
+    <string name="total_score">Puntaje total</string>
+    <string name="turn_total">Total de turnos</string>
+    <string name="dice_total">Total de dados</string>
+    <string name="roll">ROLLO</string>
+    <string name="hold">SOSTENER</string>
+    <string name="left_dice_image">Imagen de dados izquierdo</string>
+    <string name="right_dice_image">Imagen de dados derecho</string>
+    <string name="loser_image">Imagen de perdedor</string>
+    <string name="trophy_image">Imagen del trofeo</string>
+    <string name="player_games_value">0</string>
+    <string name="player_total_score_value">0</string>
+    <string name="player_turn_total_value">0</string>
+    <string name="computer_games_value">0</string>
+    <string name="computer_total_score_value">0</string>
+    <string name="computer_turn_total_value">0</string>
+    <string name="current_roll_value">0</string>
+    <string name="show_leaderboard">mostrar tabla de clasificación</string>
+    <string name="play_game">Jugar un juego</string>
+    <string name="pig_leaderboard">tabla de clasificación de cerdos</string>
+    <string name="leaderboard_view">Vista de la tabla de líderes</string>
+    <string name="text_view">VISTA DE TEXTO</string>
+</resources>
